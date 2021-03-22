@@ -24,7 +24,7 @@ class PropertyDelegate: ReadOnlyProperty<People,String> {
 //提供委托
 class PeopleLauncher {
     operator fun provideDelegate(thisRef: People,property: KProperty<*>): ReadOnlyProperty<People,String> {
-        println("welcome")
+        println("welcome")//针对每个属性只执行一次？
 
         when(property.name) {
             "name","address" -> return PropertyDelegate()
@@ -44,6 +44,7 @@ fun main() {
 
     println(p1.name)
     println(p1.name)
+    println(p1.address)
     println(p1.address)
 
     //welcome
