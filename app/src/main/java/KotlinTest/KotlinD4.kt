@@ -27,7 +27,7 @@ fun main() {
  *
  *
  */
-inline fun myCalcualte(a: Int, b: Int) {
+inline fun myCalcualte2(a: Int, b: Int) {
     a + b
 }
 
