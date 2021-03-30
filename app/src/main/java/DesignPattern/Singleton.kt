@@ -96,6 +96,32 @@ package DesignPattern
  * static变量存放的位置。静态区。
  *
  *
+ * 静态内部类的单例模式：
+ *      public Singleton {
+ *          //类级的内部类，该内部类与外部类的实例没有绑定关系。而且只有被调用了才会加载，从而实现延迟加载。
+ *          private static class SingletonHolder {
+ *              //静态初始化器 由JVM保证线程安全
+ *              private static Singleton instance = new Singleton();
+ *          }
+ *
+ *          private Singleton(){}
+ *
+ *          public static Singleton getInstance() {
+ *              return SingletonHolder.instance;
+ *          }
+ *
+ *      }
+ *
+ *  单例和枚举：
+ *      使用枚举来实现单例模式：
+ *       public enum Singleton {
+ *           uniqueInstance;
+ *       }
+ *
+ *
+ *   单例模式的拓展控制实例的个数。
+ *         map缓存思想。
+ *
  */
 
 //kotlin的单例模式
