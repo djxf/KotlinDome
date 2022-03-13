@@ -6,10 +6,10 @@ package DesignPattern.abstrctFactofy
  */
 interface AbstractFactory {
 
-    //示例方法创建抽象方法A的对象
-    fun createProductA(): AbstractProductA
-
-    //示例方法创建抽象方法B的对象
-    fun createProductB(): AbstractProductB
+//    //示例方法创建抽象方法A的对象
+//    fun createProductA(): AbstractProductA
+//
+//    //示例方法创建抽象方法B的对象
+//    fun createProductB(): AbstractProductB
 
 }
